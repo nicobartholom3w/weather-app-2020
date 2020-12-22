@@ -1,0 +1,14 @@
+$font-main: 'Montserrat', sans-serif;
+$navy-dark: rgb(33, 51, 85);
+$navy-medium: rgb(68, 84, 110);
+$navy-light: rgb(178, 193, 220);
+$navy-extralight: rgb(223, 230, 247);
+$gold-dark: rgb(83, 73, 9);
+$gold-medium: rgb(155, 145, 88);
+$gold-light: rgb(211, 200, 143);
+$white: rgb(255, 255, 255);
+
+@mixin outline {
+    outline-color: $gold-medium;
+    outline-width: thin;
+}

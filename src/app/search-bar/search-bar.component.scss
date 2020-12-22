@@ -1,0 +1,24 @@
+@import url("../_base.scss");
+
+.search {
+    width: 14rem;
+    height: 1.5rem;
+    border: none;
+    font-size: .8rem;
+    color: rgba(33, 51, 85, .7);
+    padding-left: .5rem;
+    // @include outline;
+    &__container {
+        position: relative;
+        height: 3.5rem;
+        min-width: 100%;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        position: absolute;
+    }
+}
