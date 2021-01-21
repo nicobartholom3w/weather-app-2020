@@ -1,1 +1,22 @@
-<p>current-weather works!</p>
+<div class="container">
+    <div class="current__container">
+        <div class="current__header">
+            <div class="location">Madison, WI 53705</div>
+            <div class="date">Monday, December 15</div>
+            <div class="time">5:55 PM</div>
+        </div>
+        <div class="current__temperature">
+            <div class="current__temperature-number">78</div>
+            <div class="current__temperature-type">°F</div>
+        </div>
+        <div class="current__precipitaiton">
+            <div class="precipitation__icon-container">
+                <div class="precipitation__icon"></div>
+            </div>
+            <div class="current__precipitation-text">Cloudy</div>
+        </div>
+    </div>
+    <div class="hourly__container">
+        <app-forecast-slot></app-forecast-slot>
+    </div>
+</div>

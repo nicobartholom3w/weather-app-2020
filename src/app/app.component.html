@@ -7,14 +7,17 @@
     <div class="nav__items">
       <app-search-bar></app-search-bar>
       <div class="nav__option-container">
-        <button class="nav__option nav__option-active">Today</button>
-        <button class="nav__option">10 Day</button>
+        <button 
+          [routerLink]="['today']"
+          class="nav__option nav__option-active">Today</button>
+        <button 
+          [routerLink]="['tenday']"
+          class="nav__option">10 Day</button>
       </div>
     </div>
 
   </nav>
   <div class="content__container">
-    <router-outlet></router-outlet>
     <router-outlet></router-outlet>
     <footer class="footer__container">
       <div class="footer">Created by <a class="footer footer__link" href="www.nicobartholomew.com">Nico Bartholomew</a></div>
