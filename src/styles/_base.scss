@@ -4,12 +4,14 @@ $navy-medium: rgb(69, 85, 110);
 $navy-mediumlight: rgb(126, 141, 167);
 $navy-light: rgb(178, 193, 220);
 $navy-extralight: rgb(223, 230, 247);
+$lowopacity-navydark: rgba(33, 51, 85, 0.7);
 $gold-dark: rgb(83, 73, 9);
 $gold-medium: rgb(155, 145, 88);
 $gold-light: rgb(211, 200, 143);
 $gold-extralight: rgb(214, 212, 200);
-$gray-navylight: rgb(155, 161, 170);
-$gray-navymedium: rgb(121, 131, 151);
+// $gray-navylight: rgb(155, 161, 170);
+// $gray-navymedium: rgb(121, 131, 151);
+
 $search-width: 16.75rem;
 $nav-width: 18.75rem;
 @mixin outline {

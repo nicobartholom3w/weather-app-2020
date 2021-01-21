@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-
+  isSearchActive: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  searchActive() {
+    this.isSearchActive = true;
+  }
 }

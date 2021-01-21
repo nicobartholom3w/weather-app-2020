@@ -23,6 +23,7 @@
 
     &__main {
         font-size: 1.3rem;
+        font-weight: 800;
         color: $navy-dark;
         &-container {
             min-width: 100%;
@@ -64,6 +65,7 @@
     }
     &__option {
         color: $navy-light;
+        cursor: pointer;
         // color: transparent;
         box-sizing: border-box;
         height: 2rem;
