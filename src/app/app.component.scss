@@ -95,9 +95,7 @@
 .content {
 
     &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        position: relative;
         min-height: 100%;
         width: 100%;
     }
@@ -106,7 +104,7 @@
     font-size: .5rem;
     color: $navy-dark;
     font-weight: 600;
-
+    
     &__link {
         @include outline;
         
@@ -125,6 +123,8 @@
         }
     }
     &__container {
+        position: absolute;
+        bottom: 0;
         height: 1.5rem;
         width: 100%;
         display: flex;
