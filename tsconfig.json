@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "weather-icons": [
+        "dist/weather-icons"
+      ],
+      "weather-icons/*": [
+        "dist/weather-icons/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
