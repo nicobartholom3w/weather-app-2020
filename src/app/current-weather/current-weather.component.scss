@@ -2,10 +2,17 @@
 
 .container {
     width: 100%;
+    min-height: 100%;
+    font-family: Montserrat;
     // background-color: purple;
     color: white;
      &__day {
         background-color: $navy-medium;
+        background-color: $purple-dark;
+     }
+
+     &__night {
+         background-color: $purple-dark;
      }
 }
 
@@ -19,22 +26,73 @@
         flex-direction: column;
         align-items: center;
     }
-    &__precipitation {
 
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: .75rem;
+    }
+    &__location {
+        font-weight: 600;
+        font-size: 1.75rem;
+        margin: .5rem 0;
+    }
+
+    &__date {
+        font-weight: 500;
+        font-size: 1.25rem;
+        margin: .25rem 0;
+    }
+
+    &__time {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    &__precipitation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__temperature {
+        position: relative;
+        background-color: pink;
+        height: 8rem;
+        width: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-number {
+            font-size: 6rem;
+            font-weight: 600;
+        }
+
+        &-type {
+            position: absolute;
+            font-size: 1.5rem;
+            font-weight: 600;
+            top: 0;
+            right: 0;
+        }
     }
 }
 
-.precipitaiton {
+.precipitation {
 
     &__icon {
         color: purple;
         &-container {
             color: red;
+            height: 18rem;
         }
     }
 }
 
 
 :host .precipitation__icon ::ng-deep {
-    
+    color: $gold-light;
+    color: $purple-light;
 }
