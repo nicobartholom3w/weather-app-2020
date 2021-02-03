@@ -13,7 +13,7 @@
         z-index: -1;
         height: 100%;
         width: 100%;
-        background: linear-gradient($navy-extralight, $navy-light);
+        // background: linear-gradient($navy-extralight, $navy-light);
         background: white;
         // background: linear-gradient($gold-extralight, $gold-light);
     }
@@ -42,7 +42,7 @@
 .nav {
 
     &__container {
-        background: $navy-medium;
+        background: $navy-dark;
         // background: linear-gradient($navy-mediumlight, $navy-medium);
         // background: linear-gradient($gray-navylight, $gray-navymedium);
         // background: $gray-navymedium;
@@ -116,7 +116,7 @@
             color: $navy-medium;
         }
         &:hover {
-            color: $navy-extralight;
+            // color: $navy-extralight;
             color: $navy-dark;
             color: $gold-dark;
         }

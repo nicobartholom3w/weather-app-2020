@@ -7,6 +7,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { ForecastWeatherComponent } from './forecast-weather/forecast-weather.component';
 import { ForecastSlotComponent } from './forecast-slot/forecast-slot.component';
+import { WeatherIconsModule } from 'projects/weather-icons/src/public-api';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ForecastSlotComponent } from './forecast-slot/forecast-slot.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WeatherIconsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,40 @@
-:host {
-    height: 10rem;
+@import '_base';
+
+.container {
+    width: 100%;
+    // background-color: purple;
+    color: white;
+     &__day {
+        background-color: $navy-medium;
+     }
+}
+
+.current {
+    
+    &__container {
+        width: $nav-width;
+        margin: auto;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__precipitation {
+
+    }
+}
+
+.precipitaiton {
+
+    &__icon {
+        color: purple;
+        &-container {
+            color: red;
+        }
+    }
 }
 
 
-.container {
-    height: 10rem;
-    width: 100%;
-    background-color: purple;
+:host .precipitation__icon ::ng-deep {
+    
 }

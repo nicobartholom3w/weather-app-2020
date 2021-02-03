@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit } from '@angular/core';
+import { weatherIcons } from './weather-icons';
 
 @Component({
-  selector: 'lib-weather-icons',
+  selector: 'weather-icons',
   template: `
-    <p>
-      weather-icons works!
-    </p>
+    <ng-content></ng-content>
   `,
-  styles: []
+  styles: [':host::ng-deep svg{}'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class WeatherIconsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+export class WeatherIconsComponent {
+  
+  @Input()
+  set name(iconName: string) {
+    this.element.nativeElement.innerHTML = weatherIcons [iconName] || null;
   }
+  constructor(private element: ElementRef) { }
 
 }
