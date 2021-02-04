@@ -1,0 +1,83 @@
+@import '_base';
+
+.container {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-weight: 700;
+    color: $navy-dark;
+    border-bottom: 1px solid $navy-light;
+    border-top: 1px solid $navy-light;
+    &__inner {
+        width: $nav-width;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.slot {
+    height: 3rem;
+    width: 4rem;
+    // background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    white-space: pre;
+    justify-content: flex-start;
+}
+
+.temperature {
+    
+    &__inner {
+        position: relative;
+        margin-top: .1rem;
+    }
+    &__number {
+        font-size: 1.6rem;
+    }
+
+    &__type{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        font-size: .5rem;
+    }
+}
+
+.precipitation {
+    justify-content: flex-end;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+    }
+    &__icon {
+        height: 2.25rem;
+        // margin-top: -.65rem;
+    }
+
+    &__text {
+        font-size: .5rem;
+        // margin-top: -.5rem;
+        position: absolute;
+        bottom: .45rem;
+    }
+}
+
+
+:host .precipitation__icon ::ng-deep {
+    color: $gold-dark;
+    color: $purple-dark;
+}
