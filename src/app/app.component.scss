@@ -23,7 +23,7 @@
     
 
     &__main {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         font-weight: 800;
         color: $navy-dark;
         &-container {
@@ -116,13 +116,14 @@
     }
     &__container {
         position: absolute;
+        background: $navy-light;
         bottom: 0;
         height: 1.5rem;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        // background-color: white;
         border-top: 1.5px solid $navy-light;
     }
 }

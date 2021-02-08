@@ -1,3 +1,35 @@
+@import '_base';
+
+.forecast__location {
+    color: $navy-dark;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $navy-light;
+    // background: $purple-light;
+    // background: $gold-extralight;
+
+    &-container {
+        width: $nav-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 3.5rem;
+    }
+
+    &-info {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    &-about {
+        font-size: .75rem;
+        font-weight: 600;
+    }
+}
+
+
 .forecast__container {
     padding-bottom: 1.5rem;
 }
