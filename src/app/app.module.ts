@@ -8,6 +8,7 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import { ForecastWeatherComponent } from './forecast-weather/forecast-weather.component';
 import { ForecastSlotComponent } from './forecast-slot/forecast-slot.component';
 import { WeatherIconsModule } from 'projects/weather-icons/src/public-api';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { WeatherIconsModule } from 'projects/weather-icons/src/public-api';
     SearchBarComponent,
     CurrentWeatherComponent,
     ForecastWeatherComponent,
-    ForecastSlotComponent
+    ForecastSlotComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 export const weatherIcons = {
     dtchanceflurries: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>chanceflurries</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-23.000000, -151.000000)">
@@ -11,7 +11,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtchancerain: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>chancerain</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-169.000000, -151.000000)">
@@ -31,7 +31,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtchancesleet: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>chancesleet</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-310.000000, -151.000000)">
@@ -50,7 +50,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtchancesnow: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>chancesnow</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-454.000000, -151.000000)">
@@ -64,7 +64,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtchancestorm: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>chancetstorms</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-601.000000, -151.000000)">
@@ -88,7 +88,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtclear: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>clear</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-746.000000, -151.000000)">
@@ -112,7 +112,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtcloudy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>cloudy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-891.000000, -151.000000)">
@@ -131,7 +131,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtflurries: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>flurries</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1036.000000, -151.000000)">
@@ -145,7 +145,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtfog:   `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>fog</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1181.000000, -151.000000)">
@@ -166,7 +166,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dthazy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>hazy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1327.000000, -151.000000)">
@@ -187,7 +187,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtmostlycloudy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>mostlycloudy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1472.000000, -151.000000)">
@@ -209,7 +209,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtmostlysunny: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>mostlysunny</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1618.000000, -151.000000)">
@@ -231,7 +231,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtpartlycloudy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>partlycloudy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1764.000000, -151.000000)">
@@ -253,7 +253,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtpartlysunny: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>partlysunny</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-23.000000, -285.000000)">
@@ -275,7 +275,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtrain: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>rain</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-310.000000, -285.000000)">
@@ -300,7 +300,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtsleet: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>sleet</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-169.000000, -285.000000)">
@@ -324,7 +324,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtsnow: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>snow</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-601.000000, -285.000000)">
@@ -338,7 +338,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dtsunny: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>sunny</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-746.000000, -285.000000)">
@@ -362,7 +362,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     dttstorms: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>tstorms</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-891.000000, -285.000000)">
@@ -389,7 +389,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntchanceflurries: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_chanceflurries</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-23.000000, -551.000000)">
@@ -401,7 +401,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntchancerain: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_chancerain</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-169.000000, -551.000000)">
@@ -421,7 +421,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntchancesleet: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_chancesleet</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-310.000000, -551.000000)">
@@ -440,7 +440,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntchancesnow: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_chancesnow</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-454.000000, -551.000000)">
@@ -454,7 +454,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntchancestorm: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_chancetstorms</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-601.000000, -551.000000)">
@@ -478,7 +478,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntclear: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_clear</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-746.000000, -551.000000)">
@@ -492,7 +492,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntcloudy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_cloudy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-891.000000, -551.000000)">
@@ -511,7 +511,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntflurries: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_flurries</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1036.000000, -551.000000)">
@@ -525,7 +525,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntfog: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_fog</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1181.000000, -551.000000)">
@@ -546,7 +546,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     nthazy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_hazy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1327.000000, -551.000000)">
@@ -567,7 +567,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntmostlycloudy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_mostlycloudy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1472.000000, -551.000000)">
@@ -585,7 +585,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntmostlysunny: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_mostlysunny</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1618.000000, -551.000000)">
@@ -604,7 +604,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntpartlycloudy: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_partlycloudy</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-1764.000000, -551.000000)">
@@ -623,7 +623,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntpartlysunny: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_partlysunny</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-23.000000, -687.000000)">
@@ -642,7 +642,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntrain: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_rain</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-310.000000, -687.000000)">
@@ -667,7 +667,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntsleet: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_sleet</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-169.000000, -687.000000)">
@@ -691,7 +691,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntsnow: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_snow</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-601.000000, -687.000000)">
@@ -705,7 +705,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     ntsunny: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_sunny</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-746.000000, -687.000000)">
@@ -719,7 +719,7 @@ export const weatherIcons = {
         </g>
     </svg>`,
     nttstorms: `<?xml version="1.0" encoding="UTF-8"?>
-    <svg width="100%" height="auto" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>nt_tstorms</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Weather-@2x" transform="translate(-891.000000, -687.000000)">
