@@ -9,6 +9,7 @@ import { ForecastWeatherComponent } from './forecast-weather/forecast-weather.co
 import { ForecastSlotComponent } from './forecast-slot/forecast-slot.component';
 import { WeatherIconsModule } from 'projects/weather-icons/src/public-api';
 import { HomeComponent } from './home/home.component';
+import { GooglePlacesComponent } from './google-places/google-places.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     CurrentWeatherComponent,
     ForecastWeatherComponent,
     ForecastSlotComponent,
-    HomeComponent
+    HomeComponent,
+    GooglePlacesComponent
   ],
   imports: [
     BrowserModule,
