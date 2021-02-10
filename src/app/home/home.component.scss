@@ -1,0 +1,16 @@
+@import '_base';
+
+.home {
+    width: $nav-width;
+    text-align: center;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6rem;
+        color: $navy-dark;
+        font-size: .85rem;
+        font-weight: 500;
+        // background-color: $navy-light;
+    }
+}
