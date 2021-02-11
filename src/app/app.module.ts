@@ -10,6 +10,7 @@ import { ForecastSlotComponent } from './forecast-slot/forecast-slot.component';
 import { WeatherIconsModule } from 'projects/weather-icons/src/public-api';
 import { HomeComponent } from './home/home.component';
 import { GooglePlacesComponent } from './google-places/google-places.component';
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { GooglePlacesComponent } from './google-places/google-places.component';
     BrowserModule,
     AppRoutingModule,
     WeatherIconsModule,
+    GooglePlaceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

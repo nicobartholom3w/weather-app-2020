@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
+  
+  formattedAddress: string = "";
   isSearchActive: boolean = false;
+  options = {
+    componentRestricitons: {
+      
+    }
+  }
   constructor() { }
 
   ngOnInit() {
@@ -15,4 +22,9 @@ export class SearchBarComponent implements OnInit {
   searchActive() {
     this.isSearchActive = true;
   }
+
+  addressChange(address: any) {
+    this.formattedAddress = address.formatted_address;
+  }
+
 }

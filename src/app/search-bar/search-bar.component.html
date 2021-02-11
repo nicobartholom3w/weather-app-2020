@@ -1,5 +1,9 @@
 <div class="search__container">
-    <input type="search"  tabindex="0" placeholder="Search places" class="search">
+    <input 
+        ngx-google-places-autocomplete [options]='options'
+        (onAddressChange)="addressChange($event)"
+        type="search"  tabindex="0" placeholder="Search places" class="search">
+        {{ formattedAddress }}
     <div 
         class="search__icon"
         (click)="searchActive()">
