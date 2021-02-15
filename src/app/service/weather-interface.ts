@@ -1,9 +1,9 @@
 export interface WeatherData {
-    currentTemp: number;
+    currentTemp: string;
     tempMeasurement: string;
     precipitationType: string;
-    tempHigh: number;
-    tempLow: number;
+    tempHigh: string;
+    tempLow: string;
     time: string;
     day: string;
     date: string;
@@ -14,6 +14,7 @@ export interface WeatherData {
 }
 
 export interface LocationData {
+    formattedAddress: string;
     city: string;
     state?: string;
     country: string;
