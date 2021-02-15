@@ -26,7 +26,8 @@ import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
     BrowserModule,
     AppRoutingModule,
     WeatherIconsModule,
-    GooglePlaceModule
+    GooglePlaceModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
