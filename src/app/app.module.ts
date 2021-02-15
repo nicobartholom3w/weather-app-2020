@@ -11,6 +11,7 @@ import { WeatherIconsModule } from 'projects/weather-icons/src/public-api';
 import { HomeComponent } from './home/home.component';
 import { GooglePlacesComponent } from './google-places/google-places.component';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
     AppRoutingModule,
     WeatherIconsModule,
     GooglePlaceModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
