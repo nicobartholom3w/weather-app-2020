@@ -47,9 +47,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 5.5rem;
+        // height: 5.5rem;
         min-width: 100%;
-        // box-shadow: 
+        
     }
 
     &__items {
@@ -79,6 +79,8 @@
         &-active {
             color: white;
             border-bottom: .15rem solid white;
+            // box-shadow: 0 -1 rgba();
+            background-color: $navy-mediumdark;
         }
     }
 }

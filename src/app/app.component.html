@@ -6,13 +6,19 @@
   <nav class="nav__container">
     <div class="nav__items">
       <app-search-bar (geolocationEmitter)="locationPicked($event)"></app-search-bar>
-      <div class="nav__option-container">
+      <div 
+        *ngIf="isLocationSelected"
+        class="nav__option-container">
         <a 
+          (click)="toggleSelectedWeather()"
+          [class.nav__option-active]="isSelectedCurrent"
           [routerLink]="['today']"
-          class="nav__option nav__option-active">Today</a>
+          class="nav__option">Today</a>
         <a 
-          [routerLink]="['tenday']"
-          class="nav__option">10 Day</a>
+          (click)="toggleSelectedWeather()"
+          [class.nav__option-active]="isSelectedForecast"
+          [routerLink]="['sixday']"
+          class="nav__option">6 Day</a>
       </div>
     </div>
 

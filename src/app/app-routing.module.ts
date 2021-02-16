@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'today', component: CurrentWeatherComponent },
-  { path: 'tenday', component: ForecastWeatherComponent },
+  { path: 'sixday', component: ForecastWeatherComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

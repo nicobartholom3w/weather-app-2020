@@ -15,7 +15,7 @@ export class WeatherService {
   // getWeather(latitude: number, longitude: number): Observable<WeatherData> {
     
   //    this.httpClient  
-  //     .get('https://api.weather.gov/points/{latitude},{longitude}');
+  //     .get('https://api.weather.gov/points/' + latitude + ',' + longitude);
   //     // return this.weather;
   //   // return of({results: [{currentTemp: 1, temp:1}]})
   // }

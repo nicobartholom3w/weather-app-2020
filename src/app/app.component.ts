@@ -10,12 +10,20 @@ import { WeatherService } from './service/weather.service';
 export class AppComponent {
   title = 'weather-app';
   locationInfo: LocationData;
-
+  isLocationSelected: boolean = false;
+  isSelectedCurrent: boolean = true;
+  isSelectedForecast: boolean = false; 
   constructor(private weatherService: WeatherService) {}
 
   locationPicked(geolocationData: LocationData) {
     this.locationInfo = geolocationData;
     this.weatherService.getLocationData(geolocationData);
-    
+    this.isLocationSelected = true;
+  }
+
+  toggleSelectedWeather() {
+    this.isSelectedCurrent = !this.isSelectedCurrent;
+    this.isSelectedForecast = !this.isSelectedForecast;
+
   }
 }
