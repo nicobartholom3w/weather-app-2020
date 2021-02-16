@@ -8,10 +8,13 @@ export interface WeatherData {
     day: string,
     date: string,
     icon: string,
-    weatherDisplayed: string,
-    wfo: string,
-    latitude: string,
-    longitude: string,
+    weatherDisplayed: string,  
+}
+
+export interface weatherGridInfo {
+    gtidId: string,
+    gridX: string,
+    gridY: string,
 }
 
 export interface LocationData {
