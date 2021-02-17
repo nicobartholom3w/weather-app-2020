@@ -41,7 +41,7 @@ export class SearchBarComponent implements OnInit {
       this.geolocation = {formattedAddress: this.formattedAddress, city: address.address_components[0].long_name, state: address.address_components[2].short_name, country: address.address_components[3].short_name, latitude: address.geometry.location.lat(), longitude: address.geometry.location.lng()};
     }
       this.geolocationEmitter.emit(this.geolocation);
-    this.weatherService.getGridInfo(this.geolocation.latitude, this.geolocation.longitude);
+    // this.weatherService.getGridInfo(this.geolocation.latitude, this.geolocation.longitude);
     // this.formattedAddress = address.address_components[address.address_components.length - 1].short_name;
     // this.weatherService.getWeather(this.geolocation.latitude, this.geolocation.longitude);
     // console.log(this.geolocation);

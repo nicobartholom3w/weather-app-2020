@@ -11,10 +11,33 @@ export interface WeatherData {
     weatherDisplayed: string,  
 }
 
-export interface weatherGridInfo {
-    gtidId: string,
+export interface weatherGridBasePayload {
+    context: any[],
+    id: string,
+    type: string,
+    geometry: object,
+    properties: weatherGridProperties,
+
+}
+
+export interface weatherGridProperties {
+    id: string,
+    type: string,
+    cwa: string,
+    forecastOffice: string,
+    gridId: string,
     gridX: string,
     gridY: string,
+    forecast: string,
+    forecastHourly: string,
+    forecastGridData: string,
+    observationsStations: string,
+    relativeLocation: object,
+    forecastZone: string,
+    county: string,
+    fireWeatherZone: string,
+    timeZone: string,
+    radarStation: string,
 }
 
 export interface LocationData {

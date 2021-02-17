@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { weatherIcons } from 'projects/weather-icons/src/lib/weather-icons/weather-icons';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { LocationData, WeatherData, weatherGridInfo } from './weather-interface';
+import { LocationData, WeatherData } from './weather-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -10,17 +10,18 @@ import { LocationData, WeatherData, weatherGridInfo } from './weather-interface'
 export class WeatherService {
   currentWeather: WeatherData;
   currentLocation: BehaviorSubject<LocationData> = new BehaviorSubject<LocationData>(null);
-  currentWeatherStation: weatherGridInfo;
+  // currentWeatherStation: weatherGridInfo;
 
   constructor(private httpClient: HttpClient) { }
 
-  getGridInfo(latitude: string, longitude: string): Observable<weatherGridInfo> {
+  // getGridInfo(latitude: string, longitude: string): Observable<weatherGridInfo> {
 
-    console.log(this.httpClient 
-      .get<weatherGridInfo>('https://api.weather.gov/points/' + latitude + ',' + longitude));
-    return this.httpClient 
-      .get<weatherGridInfo>('https://api.weather.gov/points/' + latitude + ',' + longitude);
-  }
+    // let call = this.httpClient 
+      // .get<weatherGridInfo>('https://api.weather.gov/points/' + latitude + ',' + longitude);
+    // console.log(call.)
+    // return this.httpClient 
+      // .get<weatherGridInfo>('https://api.weather.gov/points/' + latitude + ',' + longitude);
+  // }
 
   // getWeather(latitude: string, longitude: string): Observable<WeatherData> {
   //   let stationCall = 
