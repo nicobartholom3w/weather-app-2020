@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { weatherIcons } from 'projects/weather-icons/src/lib/weather-icons/weather-icons';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { LocationData, WeatherData, WeatherGridBasePayload, WeatherHourlyForecastBasePayload } from './weather-interface';
+import { LocationData, WeatherData, WeatherGridBasePayload, WeatherForecastBasePayload } from './weather-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -19,12 +19,12 @@ export class WeatherService {
       .get<WeatherGridBasePayload>('https://api.weather.gov/points/' + latitude + ',' + longitude);
   }
 
-  getWeatherHourlyForecast(hourlyForecastLink: string): Observable<WeatherHourlyForecastBasePayload> {
+  getWeatherHourlyForecast(hourlyForecastLink: string): Observable<WeatherForecastBasePayload> {
     return this.httpClient
-      .get<WeatherHourlyForecastBasePayload>(hourlyForecastLink);
+      .get<WeatherForecastBasePayload>(hourlyForecastLink);
   }
 
-  getWeatherDayForecast() {
+  getWeatherDayForecast(dayForecastLink: string) {
 
   }
 

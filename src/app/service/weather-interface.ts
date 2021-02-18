@@ -52,15 +52,15 @@ export interface WeatherGridProperties {
     radarStation: string,
 }
 
-export interface WeatherHourlyForecastBasePayload {
+export interface WeatherForecastBasePayload {
     context: any[],
     id: string,
     type: string,
     geometry: object,
-    properties: WeatherHourlyForecastProperties,
+    properties: WeatherForecastProperties,
 }
 
-export interface WeatherHourlyForecastProperties {
+export interface WeatherForecastProperties {
     updated: string,
     units: string,
     forecastGenerator: string,

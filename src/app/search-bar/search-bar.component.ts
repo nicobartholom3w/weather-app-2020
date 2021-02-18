@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { Options } from 'ngx-google-places-autocomplete/objects/options/options';
-import { LocationData, WeatherGridBasePayload, WeatherHourlyForecastBasePayload } from '../service/weather-interface';
+import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload } from '../service/weather-interface';
 import { WeatherService } from '../service/weather.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class SearchBarComponent implements OnInit {
   formattedAddress: string = "";
   geolocation: LocationData;
   weatherGridBase: WeatherGridBasePayload;
-  weatherHourlyForecast: WeatherHourlyForecastBasePayload;
+  weatherHourlyForecast: WeatherForecastBasePayload;
   @Output() geolocationEmitter: EventEmitter<LocationData> = new EventEmitter();
   isSearchActive: boolean = false;
   options: Options = {
@@ -35,7 +35,7 @@ export class SearchBarComponent implements OnInit {
 
   addressChange(address: any) {
     this.formattedAddress = address.formatted_address;
-    // console.log(address);
+
     if(address.address_components.length < 4) {
       this.geolocation = {formattedAddress: this.formattedAddress, city: address.address_components[0].long_name, country: address.address_components[2].short_name, latitude: address.geometry.location.lat(), longitude: address.geometry.location.lng()};  
     }
@@ -63,7 +63,7 @@ export class SearchBarComponent implements OnInit {
   getWeatherHourlyForecastBase(hourlyForecastLink: string) {
     this.weatherService.getWeatherHourlyForecast(hourlyForecastLink)
       .subscribe({
-        next: (hourlyForecastInfo: WeatherHourlyForecastBasePayload) => {
+        next: (hourlyForecastInfo: WeatherForecastBasePayload) => {
           
         },
         error: (error) => {
