@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LocationData } from './service/weather-interface';
 import { WeatherService } from './service/weather.service';
 
@@ -7,18 +8,23 @@ import { WeatherService } from './service/weather.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'weather-app';
   locationInfo: LocationData;
   isLocationSelected: boolean = false;
   isSelectedCurrent: boolean = true;
   isSelectedForecast: boolean = false; 
-  constructor(private weatherService: WeatherService) {}
+  constructor(private weatherService: WeatherService, private router: Router) {}
+
+  ngOnInit() {
+      this.router.navigate(['/home']);
+  }
 
   locationPicked(geolocationData: LocationData) {
     this.locationInfo = geolocationData;
     this.weatherService.getLocationData(geolocationData);
     this.isLocationSelected = true;
+    this.router.navigate(['/today']);
   }
 
   toggleSelectedWeather() {

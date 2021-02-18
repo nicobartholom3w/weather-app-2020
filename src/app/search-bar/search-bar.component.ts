@@ -24,6 +24,7 @@ export class SearchBarComponent implements OnInit {
     strictBounds: undefined,
     origin: undefined
   }
+  
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {
@@ -52,7 +53,7 @@ export class SearchBarComponent implements OnInit {
         next: (gridInfo: WeatherGridBasePayload) => {
           this.weatherGridBase = gridInfo;
           this.getWeatherHourlyForecastBase(gridInfo.properties.forecastHourly);
-          
+
           console.log(this.weatherGridBase);
         },
         error: (error) => {
