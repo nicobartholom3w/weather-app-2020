@@ -7,21 +7,54 @@ export interface LocationData {
     longitude: string,
 }
 
-export interface WeatherData {
-    currentTemp: string,
-    tempMeasurement: string,
-    precipitationType: string,
-    tempHigh: string,
-    tempLow: string,
-    time: string,
-    day: string,
+// export interface WeatherData {
+//     currentTemp: string,
+//     tempMeasurement: string,
+//     precipitationType: string,
+//     tempHigh: string,
+//     tempLow: string,
+//     time: string,
+//     day: string,
+//     date: string,
+//     icon: string,
+//     weatherDisplayed: string,  
+// }
+
+export interface WeatherCurrentDisplay {
+    location: string,
     date: string,
+    time: string,
+    timeZone: string,
+    currentTemperature: number,
+    temperatureUnit: string,
+    highTemperature: number,
+    lowTemperature: number,
+    isDaytime: boolean,
     icon: string,
-    weatherDisplayed: string,  
+    precipitation: string,
 }
 
 export interface WeatherHourlyForecastDisplay {
-    
+    location: string,
+    time: string,
+    timeZone: string,
+    temperature: number,
+    temperatureUnit: string,
+    isDaytime: boolean,
+    icon: string,
+    precipitation: string,
+}
+
+export interface WeatherSixDayForecastDisplay {
+    location: string,
+    day: string,
+    month: string,
+    date: number,
+    temperature: number,
+    temperatureUnit: string,
+    isDaytime: boolean,
+    icon: string,
+    precipitation: string,
 }
 
 export interface WeatherGridBasePayload {
