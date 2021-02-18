@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { Options } from 'ngx-google-places-autocomplete/objects/options/options';
-import { LocationData, weatherGridBasePayload } from '../service/weather-interface';
+import { LocationData, WeatherGridBasePayload, WeatherHourlyForecastBasePayload } from '../service/weather-interface';
 import { WeatherService } from '../service/weather.service';
 
 @Component({
@@ -12,7 +12,8 @@ import { WeatherService } from '../service/weather.service';
 export class SearchBarComponent implements OnInit {
   formattedAddress: string = "";
   geolocation: LocationData;
-  weatherGridBase: weatherGridBasePayload;
+  weatherGridBase: WeatherGridBasePayload;
+  weatherHourlyForecast: WeatherHourlyForecastBasePayload;
   @Output() geolocationEmitter: EventEmitter<LocationData> = new EventEmitter();
   isSearchActive: boolean = false;
   options: Options = {
@@ -48,14 +49,27 @@ export class SearchBarComponent implements OnInit {
   getWeatherGrideBase(latitude: string, longitude: string) {
     this.weatherService.getGridInfo(latitude, longitude)
       .subscribe({
-        next: (gridInfo: weatherGridBasePayload) => {
+        next: (gridInfo: WeatherGridBasePayload) => {
           this.weatherGridBase = gridInfo;
+          this.getWeatherHourlyForecastBase(gridInfo.properties.forecastHourly);
           console.log(this.weatherGridBase);
         },
         error: (error) => {
           alert("This weather data is not currently available.");
         }
       });
+  }
+
+  getWeatherHourlyForecastBase(hourlyForecastLink: string) {
+    this.weatherService.getWeatherHourlyForecast(hourlyForecastLink)
+      .subscribe({
+        next: (hourlyForecastInfo: WeatherHourlyForecastBasePayload) => {
+          
+        },
+        error: (error) => {
+          alert("This weather data is not currently available.");
+        }
+      })
   }
 
 }

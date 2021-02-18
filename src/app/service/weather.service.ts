@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { weatherIcons } from 'projects/weather-icons/src/lib/weather-icons/weather-icons';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { LocationData, WeatherData, weatherGridBasePayload } from './weather-interface';
+import { LocationData, WeatherData, WeatherGridBasePayload, WeatherHourlyForecastBasePayload } from './weather-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -14,28 +14,22 @@ export class WeatherService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getGridInfo(latitude: string, longitude: string): Observable<weatherGridBasePayload> {
+  getGridInfo(latitude: string, longitude: string): Observable<WeatherGridBasePayload> {
     return this.httpClient
-      .get<weatherGridBasePayload>('https://api.weather.gov/points/' + latitude + ',' + longitude);
-    // let call = this.httpClient 
-      // .get<weatherGridInfo>('https://api.weather.gov/points/' + latitude + ',' + longitude);
-    // console.log(call.)
-    // return this.httpClient 
-      // .get<weatherGridInfo>('https://api.weather.gov/points/' + latitude + ',' + longitude);
+      .get<WeatherGridBasePayload>('https://api.weather.gov/points/' + latitude + ',' + longitude);
   }
 
-  // getWeather(latitude: string, longitude: string): Observable<WeatherData> {
-  //   let stationCall = 
-  //    this.httpClient  
-      
-  //     console.log(stationCall);
-  //     // return this.weather;
-  //   // return of({results: [{currentTemp: 1, temp:1}]})
-  // }
+  getWeatherHourlyForecast(hourlyForecastLink: string): Observable<WeatherHourlyForecastBasePayload> {
+    return this.httpClient
+      .get<WeatherHourlyForecastBasePayload>(hourlyForecastLink);
+  }
+
+  getWeatherDayForecast() {
+
+  }
 
   getLocationData(locationData: LocationData) {
    this.currentLocation.next(locationData);
   }
 
-  // getLocationData = (locationData: LocationData) => this.currentLocation.next(locationData);
 }
