@@ -24,7 +24,7 @@ export class SearchBarComponent implements OnInit {
     strictBounds: undefined,
     origin: undefined
   }
-  
+
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {
@@ -57,7 +57,7 @@ export class SearchBarComponent implements OnInit {
           console.log(this.weatherGridBase);
         },
         error: (error) => {
-          alert("This weather data is not currently available.");
+          alert("This weather data is not currently available. Gridbase");
         }
       });
   }
