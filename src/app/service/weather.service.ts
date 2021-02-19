@@ -10,7 +10,9 @@ import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload, Weath
 
 export class WeatherService {
   currentLocation: BehaviorSubject<LocationData> = new BehaviorSubject<LocationData>(null);
-  // currentWeatherStation: weatherGridInfo;
+  currentWeather: BehaviorSubject<WeatherCurrentDisplay> = new BehaviorSubject<WeatherCurrentDisplay>(null);
+  hourlyForecast: BehaviorSubject<WeatherHourlyForecastDisplay> = new BehaviorSubject<WeatherHourlyForecastDisplay>(null);
+  sixDayForecast: BehaviorSubject<WeatherSixDayForecastDisplay> = new BehaviorSubject<WeatherSixDayForecastDisplay>(null);
 
   constructor(private httpClient: HttpClient) { }
 
@@ -37,15 +39,15 @@ export class WeatherService {
 
   // }
 
-  getCurrentWeatherData(currentWeather: WeatherCurrentDisplay) {
+  getCurrentWeatherData(currentWeatherData: WeatherCurrentDisplay) {
 
   }
 
-  getHourlyWeatherData(hourlyForecastWeather: WeatherHourlyForecastDisplay) {
+  getHourlyWeatherData(hourlyForecastWeatherData: WeatherHourlyForecastDisplay) {
 
   }
 
-  getSixDayWeatherData(sixDayForecastWeather: WeatherSixDayForecastDisplay) {
-    
+  getSixDayWeatherData(sixDayForecastWeatherData: WeatherSixDayForecastDisplay) {
+
   }
 }
