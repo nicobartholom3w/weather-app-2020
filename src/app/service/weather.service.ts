@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { weatherIcons } from 'projects/weather-icons/src/lib/weather-icons/weather-icons';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload } from './weather-interface';
+import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload, WeatherCurrentDisplay, WeatherHourlyForecastDisplay, WeatherSixDayForecastDisplay } from './weather-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -25,11 +25,27 @@ export class WeatherService {
   }
 
   getWeatherDayForecast(dayForecastLink: string) {
-
+    return this.httpClient
+      .get<WeatherForecastBasePayload>(dayForecastLink);
   }
 
   getLocationData(locationData: LocationData) {
    this.currentLocation.next(locationData);
   }
 
+  // getWeatherInfo(currentWeather: WeatherCurrentDisplay, hourlyForecastWeather: WeatherHourlyForecastDisplay, sixDayForecastWeather: WeatherSixDayForecastDisplay) {
+
+  // }
+
+  getCurrentWeatherData(currentWeather: WeatherCurrentDisplay) {
+
+  }
+
+  getHourlyWeatherData(hourlyForecastWeather: WeatherHourlyForecastDisplay) {
+
+  }
+
+  getSixDayWeatherData(sixDayForecastWeather: WeatherSixDayForecastDisplay) {
+    
+  }
 }

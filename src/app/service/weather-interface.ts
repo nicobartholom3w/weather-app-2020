@@ -22,8 +22,7 @@ export interface LocationData {
 
 export interface WeatherCurrentDisplay {
     location: string,
-    date: string,
-    time: string,
+    dateTime: string,
     timeZone: string,
     currentTemperature: number,
     temperatureUnit: string,
@@ -36,7 +35,7 @@ export interface WeatherCurrentDisplay {
 
 export interface WeatherHourlyForecastDisplay {
     location: string,
-    time: string,
+    dateTime: string,
     timeZone: string,
     temperature: number,
     temperatureUnit: string,
@@ -47,9 +46,7 @@ export interface WeatherHourlyForecastDisplay {
 
 export interface WeatherSixDayForecastDisplay {
     location: string,
-    day: string,
-    month: string,
-    date: number,
+    dateTime: string,
     temperature: number,
     temperatureUnit: string,
     isDaytime: boolean,

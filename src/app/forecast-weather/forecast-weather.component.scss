@@ -6,8 +6,6 @@
     display: flex;
     justify-content: center;
     background: $navy-light;
-    // background: $purple-light;
-    // background: $gold-extralight;
 
     &-container {
         width: $nav-width;
@@ -15,12 +13,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 3.5rem;
+        // height: 3.5rem;
+        padding: .5rem 0;
     }
 
     &-info {
         font-size: 1.25rem;
         font-weight: 700;
+        text-align: center;
     }
 
     &-about {
