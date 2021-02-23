@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { weatherIcons } from 'projects/weather-icons/src/lib/weather-icons/weather-icons';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload, WeatherCurrentDisplay, WeatherForecastDisplay, StationIdRequest } from './weather-interface';
+import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload, WeatherCurrentDisplay, WeatherForecastDisplay, StationIdRequest, WeatherData } from './weather-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +10,7 @@ import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload, Weath
 
 export class WeatherService {
   currentLocation: BehaviorSubject<LocationData> = new BehaviorSubject<LocationData>(null);
-  currentWeather: BehaviorSubject<WeatherCurrentDisplay> = new BehaviorSubject<WeatherCurrentDisplay>(null);
-  hourlyForecast: BehaviorSubject<WeatherForecastDisplay> = new BehaviorSubject<WeatherForecastDisplay>(null);
-  sixDayForecast: BehaviorSubject<WeatherForecastDisplay> = new BehaviorSubject<WeatherForecastDisplay>(null);
+  fullWeatherData: BehaviorSubject<WeatherData> = new BehaviorSubject<WeatherData>(null);
 
   constructor(private httpClient: HttpClient) { }
 
@@ -94,23 +92,12 @@ export class WeatherService {
       .get<WeatherForecastBasePayload>(dayForecastLink);
   }
 
+
+  getFullWeatherData(weatherData: WeatherData){
+    this.fullWeatherData.next(weatherData);
+  }
+
   getLocationData(locationData: LocationData) {
    this.currentLocation.next(locationData);
-  }
-
-  // getWeatherInfo(currentWeather: WeatherCurrentDisplay, hourlyForecastWeather: WeatherHourlyForecastDisplay, sixDayForecastWeather: WeatherSixDayForecastDisplay) {
-
-  // }
-
-  getCurrentWeather(currentWeatherData: WeatherCurrentDisplay) {
-
-  }
-
-  getHourlyForecast(hourlyForecastWeatherData: WeatherForecastDisplay) {
-
-  }
-
-  getSixDayForecast(sixDayForecastWeatherData: WeatherForecastDisplay) {
-
   }
 }

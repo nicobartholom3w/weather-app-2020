@@ -1,6 +1,8 @@
 export interface LocationData {
     formattedAddress: string,
     city: string,
+    timeZone: string,
+    zipCode?: string,
     state?: string,
     country: string,
     latitude: string,
@@ -20,10 +22,15 @@ export interface LocationData {
 //     weatherDisplayed: string,  
 // }
 
+export interface WeatherData {
+    location: LocationData,
+    currentWeather: WeatherCurrentDisplay,
+    hourlyForecast: WeatherForecastDisplay[],
+    sixDayForecast: WeatherForecastDisplay[],
+}
+
 export interface WeatherCurrentDisplay {
-    location: string,
     dateTime: string,
-    timeZone: string,
     currentTemperature: number,
     temperatureUnit: string,
     highTemperature: number,
@@ -34,9 +41,7 @@ export interface WeatherCurrentDisplay {
 }
 
 export interface WeatherForecastDisplay {
-    location: string,
     dateTime: string,
-    timeZone: string,
     temperature: number,
     temperatureUnit: string,
     isDaytime: boolean,
