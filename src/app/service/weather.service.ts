@@ -11,7 +11,9 @@ import { LocationData, WeatherGridBasePayload, WeatherForecastBasePayload, Weath
 export class WeatherService {
   currentLocation: BehaviorSubject<LocationData> = new BehaviorSubject<LocationData>(null);
   fullWeatherData: BehaviorSubject<WeatherData> = new BehaviorSubject<WeatherData>(null);
-
+   // currentWeather: WeatherCurrentDisplay = {dateTime: "", currentTemperature: null, temperatureUnit: "", highTemperature: null, lowTemperature: null, isDaytime: true, icon: "", precipitation: ""};
+  // hourlyForecast: WeatherForecastDisplay = {dateTime: "", temperature: null, temperatureUnit: "", isDaytime: true, icon: "", precipitation: ""};
+  // sixDayForecast: WeatherForecastDisplay = {dateTime: "", temperature: null, temperatureUnit: "", isDaytime: true, icon: "", precipitation: ""};
   constructor(private httpClient: HttpClient) { }
 
 

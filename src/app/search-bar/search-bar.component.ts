@@ -12,10 +12,7 @@ import { WeatherService } from '../service/weather.service';
 export class SearchBarComponent implements OnInit {
   formattedAddress: string = "";
   geolocation: LocationData = { formattedAddress: "", city: "", timeZone: "", zipCode: "", state: "", country: "", latitude: "", longitude: ""};
-  weatherDataFull: WeatherData = {location: null, currentWeather: null, hourlyForecast: null, sixDayForecast: null};
-  // currentWeather: WeatherCurrentDisplay = {dateTime: "", currentTemperature: null, temperatureUnit: "", highTemperature: null, lowTemperature: null, isDaytime: true, icon: "", precipitation: ""};
-  // hourlyForecast: WeatherForecastDisplay = {dateTime: "", temperature: null, temperatureUnit: "", isDaytime: true, icon: "", precipitation: ""};
-  // sixDayForecast: WeatherForecastDisplay = {dateTime: "", temperature: null, temperatureUnit: "", isDaytime: true, icon: "", precipitation: ""};;
+  weatherDataFull: WeatherData = {location: null, currentWeather: null, hourlyForecast: null, sixDayForecast: null}; 
   isSearchActive: boolean = false;
   @Output() geolocationEmitter: EventEmitter<LocationData> = new EventEmitter();
   @Output() weatherDataEmitter: EventEmitter<WeatherData> = new EventEmitter();
@@ -50,7 +47,7 @@ export class SearchBarComponent implements OnInit {
     }
       this.weatherService.getWeatherGrideBase(this.geolocation.latitude, this.geolocation.longitude);
       this.geolocationEmitter.emit(this.geolocation);
-      this.weatherDataEmitter.emit(this.wea)
+      this.weatherDataEmitter.emit(this.weatherDataFull);
   }
 
   

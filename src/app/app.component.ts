@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LocationData } from './service/weather-interface';
+import { LocationData, WeatherData } from './service/weather-interface';
 import { WeatherService } from './service/weather.service';
 
 @Component({
@@ -10,7 +10,8 @@ import { WeatherService } from './service/weather.service';
 })
 export class AppComponent implements OnInit {
   title = 'weather-app';
-  locationInfo: LocationData;
+  // locationInfo: LocationData;
+  weatherDataInfo: WeatherData = null;
   isLocationSelected: boolean = false;
   isSelectedCurrent: boolean = true;
   isSelectedForecast: boolean = false; 
@@ -20,9 +21,10 @@ export class AppComponent implements OnInit {
       this.router.navigate(['/home']);
   }
 
-  locationPicked(geolocationData: LocationData) {
-    this.locationInfo = geolocationData;
-    this.weatherService.getLocationData(geolocationData);
+  locationPicked(weatherDataFull: WeatherData) {
+    // this.locationInfo = geolocationData;
+    // this.weatherService.getLocationData(geolocationData);
+    this.weatherService.getFullWeatherData(weatherDataFull);
     this.isLocationSelected = true;
     this.router.navigate(['/today']);
   }

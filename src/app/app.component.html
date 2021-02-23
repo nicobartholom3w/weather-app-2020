@@ -5,7 +5,7 @@
   </div>
   <nav class="nav__container">
     <div class="nav__items">
-      <app-search-bar (geolocationEmitter)="locationPicked($event)"></app-search-bar>
+      <app-search-bar (weatherDataEmitter)="locationPicked($event)"></app-search-bar>
       <div 
         *ngIf="isLocationSelected"
         class="nav__option-container">

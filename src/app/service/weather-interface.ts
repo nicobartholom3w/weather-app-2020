@@ -1,7 +1,7 @@
 export interface LocationData {
     formattedAddress: string,
     city: string,
-    timeZone: string,
+    timeZone?: string,
     zipCode?: string,
     state?: string,
     country: string,
