@@ -33,7 +33,7 @@ export interface WeatherCurrentDisplay {
     precipitation: string,
 }
 
-export interface WeatherHourlyForecastDisplay {
+export interface WeatherForecastDisplay {
     location: string,
     dateTime: string,
     timeZone: string,
@@ -44,15 +44,15 @@ export interface WeatherHourlyForecastDisplay {
     precipitation: string,
 }
 
-export interface WeatherSixDayForecastDisplay {
-    location: string,
-    dateTime: string,
-    temperature: number,
-    temperatureUnit: string,
-    isDaytime: boolean,
-    icon: string,
-    precipitation: string,
-}
+// export interface WeatherSixDayForecastDisplay {
+//     location: string,
+//     dateTime: string,
+//     temperature: number,
+//     temperatureUnit: string,
+//     isDaytime: boolean,
+//     icon: string,
+//     precipitation: string,
+// }
 
 export interface WeatherGridBasePayload {
     context: any[],
@@ -80,6 +80,13 @@ export interface WeatherGridProperties {
     fireWeatherZone: string,
     timeZone: string,
     radarStation: string,
+}
+
+export interface StationIdRequest {
+    context: any[],
+    type: string,
+    features: any[],
+    observationStations: string[],
 }
 
 export interface WeatherForecastBasePayload {
