@@ -23,7 +23,7 @@ export class WeatherService {
   constructor(private httpClient: HttpClient) { }
 
 
-  getWeatherPointDataLinks(latitude: string, longitude: string) {
+  getWeatherPointDataLinks(latitude: number, longitude: number) {
     this.getPointDataInfoCall(latitude, longitude)
       .subscribe({
         next: (pointInfo: WeatherPointBasePayload) => {
@@ -40,7 +40,7 @@ export class WeatherService {
       })
   }
 
-  getPointDataInfoCall(latitude: string, longitude: string): Observable<WeatherPointBasePayload> {
+  getPointDataInfoCall(latitude: number, longitude: number): Observable<WeatherPointBasePayload> {
     return this.httpClient
       .get<WeatherPointBasePayload>('https://api.weather.gov/points/' + latitude + ',' + longitude).pipe(
         tap((pointInfo: WeatherPointBasePayload) => {
@@ -52,6 +52,10 @@ export class WeatherService {
 
   getTimeZoneInfo(latitude: string, longitude: string): Observable<any> {
     return this.httpClient.get<any>('https://api.weather.gov/points/' + latitude + ',' + longitude)
+  }
+
+  getCurrentWeatherLink(observationStationsLink: string) {
+
   }
 
   // getPointDataInfoCall(latitude: string, longitude: string): Observable<WeatherPointBasePayload> {

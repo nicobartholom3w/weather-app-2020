@@ -23,10 +23,14 @@ export class AppComponent implements OnInit {
 
   locationPicked(googleLocationData: GoogleLocationData) {
     this.locationInfo = googleLocationData;
-    console.log(this.locationInfo);
     this.weatherService.getCurrentGoogleLocationData(googleLocationData);
-    // this.weatherService.getFullWeatherData(weatherDataFull);
-    // this.weatherService.getWeatherData
+    this.weatherService.getWeatherPointDataLinks(googleLocationData.latitude, googleLocationData.longitude);
+    // add below for calls to get weather info
+    // this.weatherService.getForecast();
+    // this.weatherService.getHourlyForecast();
+    // this.weatherService.getCurrentWeather();
+    // this.weatherService.getTimeZoneInfo();
+
     this.isLocationSelected = true;
     this.router.navigate(['/today']);
     console.log("today");

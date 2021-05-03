@@ -1,13 +1,3 @@
-// export interface LocationData {
-//     formattedAddress: string,
-//     city: string,
-//     timeZone?: string,
-//     zipCode?: string,
-//     state?: string,
-//     country: string,
-//     latitude: string,
-//     longitude: string,
-// }
 export interface GoogleLocationData {
     formattedAddress: string,
     latitude: number,
@@ -58,23 +48,10 @@ export interface WeatherPointBasePayload {
     properties: WeatherPointProperties,
 }
 export interface WeatherPointProperties {
-    // id: string,
-    // type: string,
-    // cwa: string,
-    // forecastOffice: string,
-    // gridId: string,
-    // gridX: string,
-    // gridY: string,
     forecast: string,
     forecastHourly: string,
     forecastGridData: string,
     observationsStations: string,
-    // relativeLocation: object,
-    // forecastZone: string,
-    // county: string,
-    // fireWeatherZone: string,
-    // timeZone: string,
-    // radarStation: string,
 }
 // export interface WeatherPointProperties {
 //     id: string,
@@ -97,27 +74,8 @@ export interface WeatherPointProperties {
 // }
 
 export interface TimeZoneInfo {
-    
+    // getinterface from api
 }
-// export interface WeatherGridProperties {
-//     id: string,
-//     type: string,
-//     cwa: string,
-//     forecastOffice: string,
-//     gridId: string,
-//     gridX: string,
-//     gridY: string,
-//     forecast: string,
-//     forecastHourly: string,
-//     forecastGridData: string,
-//     observationsStations: string,
-//     relativeLocation: object,
-//     forecastZone: string,
-//     county: string,
-//     fireWeatherZone: string,
-//     timeZone: string,
-//     radarStation: string,
-// }
 
 // export interface StationIdRequest {
 //     context: any[],
