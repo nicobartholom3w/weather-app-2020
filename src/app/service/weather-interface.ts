@@ -1,32 +1,33 @@
-export interface LocationData {
+// export interface LocationData {
+//     formattedAddress: string,
+//     city: string,
+//     timeZone?: string,
+//     zipCode?: string,
+//     state?: string,
+//     country: string,
+//     latitude: string,
+//     longitude: string,
+// }
+export interface GoogleLocationData {
     formattedAddress: string,
-    city: string,
-    timeZone?: string,
-    zipCode?: string,
-    state?: string,
-    country: string,
-    latitude: string,
-    longitude: string,
+    latitude: number,
+    longitude: number,
 }
 
-// export interface WeatherData {
-//     currentTemp: string,
-//     tempMeasurement: string,
-//     precipitationType: string,
-//     tempHigh: string,
-//     tempLow: string,
-//     time: string,
-//     day: string,
-//     date: string,
-//     icon: string,
-//     weatherDisplayed: string,  
-// }
+export interface WeatherPointDataLinks {
+    dailyForecastLink: string,
+    hourlyForecastLink: string,
+    observationStationsLink: string,
+    weatherStationId: string,
+    currentWeatherLink: string
+}
 
 export interface WeatherData {
-    location: LocationData,
+    location: GoogleLocationData,
     currentWeather: WeatherCurrentDisplay,
     hourlyForecast: WeatherForecastDisplay[],
     sixDayForecast: WeatherForecastDisplay[],
+    timeZoneAbbreviation: string
 }
 
 export interface WeatherCurrentDisplay {
@@ -49,69 +50,100 @@ export interface WeatherForecastDisplay {
     precipitation: string,
 }
 
-// export interface WeatherSixDayForecastDisplay {
-//     location: string,
-//     dateTime: string,
-//     temperature: number,
-//     temperatureUnit: string,
-//     isDaytime: boolean,
-//     icon: string,
-//     precipitation: string,
-// }
-
-export interface WeatherGridBasePayload {
+export interface WeatherPointBasePayload {
     context: any[],
     id: string,
     type: string,
     geometry: object,
-    properties: WeatherGridProperties,
+    properties: WeatherPointProperties,
 }
-
-export interface WeatherGridProperties {
-    id: string,
-    type: string,
-    cwa: string,
-    forecastOffice: string,
-    gridId: string,
-    gridX: string,
-    gridY: string,
+export interface WeatherPointProperties {
+    // id: string,
+    // type: string,
+    // cwa: string,
+    // forecastOffice: string,
+    // gridId: string,
+    // gridX: string,
+    // gridY: string,
     forecast: string,
     forecastHourly: string,
     forecastGridData: string,
     observationsStations: string,
-    relativeLocation: object,
-    forecastZone: string,
-    county: string,
-    fireWeatherZone: string,
-    timeZone: string,
-    radarStation: string,
+    // relativeLocation: object,
+    // forecastZone: string,
+    // county: string,
+    // fireWeatherZone: string,
+    // timeZone: string,
+    // radarStation: string,
 }
+// export interface WeatherPointProperties {
+//     id: string,
+//     type: string,
+//     cwa: string,
+//     forecastOffice: string,
+//     gridId: string,
+//     gridX: string,
+//     gridY: string,
+//     forecast: string,
+//     forecastHourly: string,
+//     forecastGridData: string,
+//     observationsStations: string,
+//     relativeLocation: object,
+//     forecastZone: string,
+//     county: string,
+//     fireWeatherZone: string,
+//     timeZone: string,
+//     radarStation: string,
+// }
 
-export interface StationIdRequest {
-    context: any[],
-    type: string,
-    features: any[],
-    observationStations: string[],
+export interface TimeZoneInfo {
+    
 }
+// export interface WeatherGridProperties {
+//     id: string,
+//     type: string,
+//     cwa: string,
+//     forecastOffice: string,
+//     gridId: string,
+//     gridX: string,
+//     gridY: string,
+//     forecast: string,
+//     forecastHourly: string,
+//     forecastGridData: string,
+//     observationsStations: string,
+//     relativeLocation: object,
+//     forecastZone: string,
+//     county: string,
+//     fireWeatherZone: string,
+//     timeZone: string,
+//     radarStation: string,
+// }
 
-export interface WeatherForecastBasePayload {
-    context: any[],
-    id: string,
-    type: string,
-    geometry: object,
-    properties: WeatherForecastProperties,
-}
+// export interface StationIdRequest {
+//     context: any[],
+//     type: string,
+//     features: any[],
+//     observationStations: string[],
+// }
 
-export interface WeatherForecastProperties {
-    updated: string,
-    units: string,
-    forecastGenerator: string,
-    generatedAt: string,
-    updateTime: string,
-    validTimes: string,
-    elevation: object,
-    periods: WeatherPeriodsBasePayload[],
-}
+// export interface WeatherForecastBasePayload {
+//     context: any[],
+//     id: string,
+//     type: string,
+//     geometry: object,
+//     properties: WeatherForecastProperties,
+// }
+
+// export interface WeatherForecastProperties {
+//     updated: string,
+//     units: string,
+//     forecastGenerator: string,
+//     generatedAt: string,
+//     updateTime: string,
+//     validTimes: string,
+//     elevation: object,
+//     periods: WeatherPeriodsBasePayload[],
+// }
 
 export interface WeatherPeriodsBasePayload {
     number: number,
@@ -129,3 +161,25 @@ export interface WeatherPeriodsBasePayload {
     detailedForecast: string,
 }
 
+// export interface WeatherData {
+//     currentTemp: string,
+//     tempMeasurement: string,
+//     precipitationType: string,
+//     tempHigh: string,
+//     tempLow: string,
+//     time: string,
+//     day: string,
+//     date: string,
+//     icon: string,
+//     weatherDisplayed: string,  
+// }
+
+// export interface WeatherSixDayForecastDisplay {
+//     location: string,
+//     dateTime: string,
+//     temperature: number,
+//     temperatureUnit: string,
+//     isDaytime: boolean,
+//     icon: string,
+//     precipitation: string,
+// }

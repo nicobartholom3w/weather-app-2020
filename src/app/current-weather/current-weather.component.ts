@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { LocationData } from '../service/weather-interface';
+import { GoogleLocationData } from '../service/weather-interface';
 import { WeatherService } from '../service/weather.service';
 
 @Component({
@@ -8,14 +8,15 @@ import { WeatherService } from '../service/weather.service';
   styleUrls: ['./current-weather.component.scss']
 })
 export class CurrentWeatherComponent implements OnInit {
-  locationInfo: LocationData;
+  locationInfo: GoogleLocationData;
 
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {
-    this.weatherService.currentLocation
-      .subscribe((currentLocation: LocationData) => {
+    this.weatherService.currentGoogleLocation
+      .subscribe((currentLocation: GoogleLocationData) => {
         this.locationInfo = currentLocation;
+        console.log(this.locationInfo);
     });
   }
       
